@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
 import { navLinks, siteConfig } from "@/content/site";
 import { cn } from "@/lib/utils";
@@ -37,6 +38,10 @@ export function MobileMenu() {
             transition={{ duration: 0.2 }}
             className="absolute inset-x-5 top-[72px] z-50 rounded-2xl border border-border/70 bg-background p-4 shadow-[0_24px_55px_-35px_rgba(15,23,42,.5)]"
           >
+            <div className="mb-4 flex items-center justify-between border-b border-border/70 pb-4">
+              <p className="text-xs font-medium tracking-[0.12em] text-muted-foreground uppercase">Aparência</p>
+              <ThemeToggle />
+            </div>
             <nav className="flex flex-col gap-1.5" aria-label="Navegação principal">
               {navLinks.map((link) => {
                 const active = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));

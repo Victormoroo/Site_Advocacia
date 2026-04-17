@@ -1,12 +1,12 @@
 ﻿import Link from "next/link";
 
+import { Container } from "@/components/common/container";
 import { MobileMenu } from "@/components/layout/mobile-menu";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { HeaderNavLinks } from "@/components/layout/site-nav";
 import { buttonVariants } from "@/components/ui/button";
 import { navLinks, siteConfig } from "@/content/site";
 import { cn } from "@/lib/utils";
-
-import { Container } from "../common/container";
-import { HeaderNavLinks } from "./site-nav";
 
 export function SiteHeader() {
   return (
@@ -24,9 +24,12 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-8 lg:flex">
           <HeaderNavLinks links={navLinks} />
-          <Link href={siteConfig.whatsappHref} target="_blank" rel="noreferrer" className={cn(buttonVariants({ size: "lg" }), "h-10")}> 
-            WhatsApp
-          </Link>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <Link href={siteConfig.whatsappHref} target="_blank" rel="noreferrer" className={cn(buttonVariants({ size: "lg" }), "h-10")}>
+              WhatsApp
+            </Link>
+          </div>
         </div>
 
         <MobileMenu />

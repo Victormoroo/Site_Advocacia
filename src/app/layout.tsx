@@ -6,6 +6,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { WhatsAppFloat } from "@/components/common/whatsapp-float";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 import { siteConfig } from "@/content/site";
 import { siteUrl } from "@/lib/seo";
 
@@ -74,22 +75,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${manrope.variable} ${sourceSerif.variable} h-full`}>
+    <html lang="pt-BR" suppressHydrationWarning className={`${manrope.variable} ${sourceSerif.variable} h-full`}>
       <body className="min-h-full bg-background text-foreground">
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
-        >
-          Ir para o conteúdo principal
-        </a>
-        <div className="flex min-h-screen flex-col">
-          <SiteHeader />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <SiteFooter />
-        </div>
-        <WhatsAppFloat />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+          >
+            Ir para o conteúdo principal
+          </a>
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <SiteFooter />
+          </div>
+          <WhatsAppFloat />
+        </ThemeProvider>
       </body>
     </html>
   );
