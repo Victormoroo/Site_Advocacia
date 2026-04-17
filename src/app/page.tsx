@@ -32,7 +32,7 @@ export const metadata: Metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border/60 bg-[radial-gradient(circle_at_top_right,rgba(52,67,80,.12),transparent_44%),linear-gradient(180deg,#f7f6f4_0%,#f1efec_100%)] py-14 sm:py-18 lg:py-22">
+      <section className="relative overflow-hidden border-b border-border/60 bg-[radial-gradient(circle_at_top_right,rgba(52,67,80,.12),transparent_44%),linear-gradient(180deg,#f7f6f4_0%,#f1efec_100%)] py-14 sm:py-18 lg:py-22 dark:bg-[radial-gradient(circle_at_top_right,rgba(130,154,172,.2),transparent_45%),linear-gradient(180deg,#0f141b_0%,#141b23_100%)]">
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.92fr]">
             <Reveal className="space-y-6">
