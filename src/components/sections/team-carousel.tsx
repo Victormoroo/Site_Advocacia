@@ -21,7 +21,7 @@ export function TeamCarousel({ lawyers }: TeamCarouselProps) {
 
   return (
     <div className="mt-10">
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className="-mx-2 overflow-x-hidden overflow-y-visible px-2 py-3 sm:-mx-3 sm:px-3" ref={emblaRef}>
         <div className="-ml-5 flex">
           {lawyers.map((lawyer) => (
             <div
