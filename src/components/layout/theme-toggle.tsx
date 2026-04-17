@@ -19,7 +19,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       variant="outline"
       size="icon"
       className={cn("relative size-10 rounded-full border-border/70 bg-background/80 backdrop-blur-sm", className)}
-      aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
+      aria-label="Alternar tema"
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       <Sun className="size-[18px] dark:hidden" aria-hidden />
