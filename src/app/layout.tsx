@@ -75,8 +75,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning className={`${manrope.variable} ${sourceSerif.variable} h-full`}>
-      <body className="min-h-full bg-background text-foreground">
+    <html
+      lang="pt-BR"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className={`${manrope.variable} ${sourceSerif.variable} h-full`}
+    >
+      <body suppressHydrationWarning className="min-h-full bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <a
             href="#main-content"
