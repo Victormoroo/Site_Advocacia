@@ -35,7 +35,7 @@ export default function EquipePage() {
             />
           </Reveal>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {team.map((lawyer, index) => (
               <Reveal key={lawyer.slug} delay={index * 0.07}>
                 <LawyerCard lawyer={lawyer} />

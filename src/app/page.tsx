@@ -3,12 +3,12 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, PhoneCall } from "lucide-react";
 
 import { AreaCard } from "@/components/cards/area-card";
-import { LawyerCard } from "@/components/cards/lawyer-card";
 import { Container } from "@/components/common/container";
 import { CtaBand } from "@/components/common/cta-band";
 import { ImagePlaceholder } from "@/components/common/image-placeholder";
 import { Reveal } from "@/components/common/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
+import { TeamCarousel } from "@/components/sections/team-carousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -187,13 +187,9 @@ export default function HomePage() {
             />
           </Reveal>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {team.map((lawyer, index) => (
-              <Reveal key={lawyer.slug} delay={index * 0.07}>
-                <LawyerCard lawyer={lawyer} />
-              </Reveal>
-            ))}
-          </div>
+          <Reveal delay={0.08}>
+            <TeamCarousel lawyers={team} />
+          </Reveal>
         </Container>
       </section>
 
