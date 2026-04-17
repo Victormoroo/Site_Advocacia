@@ -8,6 +8,7 @@ import { Reveal } from "@/components/common/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
 import { team } from "@/content/site";
 import { buildMetadata } from "@/lib/seo";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
   title: "Equipe",
@@ -37,7 +38,16 @@ export default function EquipePage() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {team.map((lawyer, index) => (
-              <Reveal key={lawyer.slug} delay={index * 0.07}>
+              <Reveal
+                key={lawyer.slug}
+                delay={index * 0.07}
+                className={cn(
+                  index === team.length - 1 &&
+                    team.length % 2 === 1 &&
+                    "md:col-span-2 md:mx-auto md:max-w-[460px] lg:col-span-1 lg:mx-0 lg:max-w-none",
+                  index === team.length - 1 && team.length % 3 === 1 && "lg:col-start-2",
+                )}
+              >
                 <LawyerCard lawyer={lawyer} />
               </Reveal>
             ))}
