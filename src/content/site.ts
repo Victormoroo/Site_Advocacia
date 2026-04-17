@@ -228,6 +228,86 @@ export const team: LawyerProfile[] = [
     languages: ["Português", "Espanhol"],
     email: "camila.duarte@testeetesteadvocacia.com.br",
   },
+  {
+    slug: "lucas-barreto",
+    name: "Dr. Lucas Barreto",
+    role: "Advogado Associado",
+    oab: "OAB/SP 000.003",
+    imageDirection:
+      "Retrato corporativo natural em preto e branco, contraste suave e fundo arquitetônico contemporâneo.",
+    miniBio:
+      "Atua em Direito Cível com foco em contratos, responsabilidade civil e estratégias para prevenção de litígios.",
+    fullBio:
+      "Dr. Lucas Barreto acompanha demandas cíveis com atenção especial à segurança contratual e à organização probatória. Seu trabalho prioriza decisões objetivas, linguagem acessível e alinhamento contínuo com o cliente durante todas as fases da demanda.",
+    education: [
+      "Bacharelado em Direito - Universidade de Ribeirão Preto",
+      "Especialização em Direito Civil e Contratos",
+      "Curso de Extensão em Métodos Consensuais de Solução de Conflitos",
+    ],
+    expertise: ["Direito Cível", "Contratos e Responsabilidade Civil"],
+    languages: ["Português"],
+    email: "lucas.barreto@testeetesteadvocacia.com.br",
+  },
+  {
+    slug: "mariana-lopes",
+    name: "Dra. Mariana Lopes",
+    role: "Advogada Associada",
+    oab: "OAB/SP 000.004",
+    imageDirection:
+      "Retrato profissional com iluminação lateral discreta, composição elegante e tons dessaturados.",
+    miniBio:
+      "Advogada com atuação em Previdenciário, dedicada a benefícios por incapacidade, BPC/LOAS e planejamento previdenciário.",
+    fullBio:
+      "Dra. Mariana Lopes atua com abordagem técnica e acolhedora em demandas previdenciárias sensíveis. Sua prática é voltada à análise documental detalhada e ao esclarecimento de cada etapa do processo, com comunicação clara e segura para o cliente.",
+    education: [
+      "Bacharelado em Direito - Centro Universitário Barão de Mauá",
+      "Pós-graduação em Direito Previdenciário e Prática do INSS",
+      "Aperfeiçoamento em Cálculo Previdenciário",
+    ],
+    expertise: ["Direito Previdenciário", "Benefícios por Incapacidade e BPC/LOAS"],
+    languages: ["Português", "Inglês"],
+    email: "mariana.lopes@testeetesteadvocacia.com.br",
+  },
+  {
+    slug: "felipe-arruda",
+    name: "Dr. Felipe Arruda",
+    role: "Advogado Associado",
+    oab: "OAB/SP 000.005",
+    imageDirection:
+      "Retrato de perfil em ambiente de escritório moderno, fundo desfocado e expressão confiante.",
+    miniBio:
+      "Atuação em Direito Trabalhista consultivo e contencioso, com foco em prevenção de passivos e estratégia processual.",
+    fullBio:
+      "Dr. Felipe Arruda trabalha em demandas trabalhistas com visão preventiva e litigiosa, atendendo pessoas e empresas com o mesmo compromisso técnico. Sua condução combina clareza na orientação, organização de evidências e planejamento jurídico compatível com cada contexto.",
+    education: [
+      "Bacharelado em Direito - Universidade de Franca (UNIFRAN)",
+      "Especialização em Direito e Processo do Trabalho",
+      "Formação em Compliance Trabalhista",
+    ],
+    expertise: ["Direito Trabalhista", "Consultivo Trabalhista Empresarial"],
+    languages: ["Português"],
+    email: "felipe.arruda@testeetesteadvocacia.com.br",
+  },
+  {
+    slug: "patricia-ribeiro",
+    name: "Dra. Patrícia Ribeiro",
+    role: "Advogada",
+    oab: "OAB/SP 000.006",
+    imageDirection:
+      "Retrato editorial sóbrio, fundo neutro e textura refinada, com luz natural suave.",
+    miniBio:
+      "Atua em Cível e Trabalhista, com experiência em negociações, acordos e atuação estratégica em conflitos complexos.",
+    fullBio:
+      "Dra. Patrícia Ribeiro desenvolve atuação integrada em demandas cíveis e trabalhistas, com foco em soluções proporcionais e juridicamente consistentes. Seu atendimento é marcado por transparência, escuta ativa e acompanhamento próximo ao cliente.",
+    education: [
+      "Bacharelado em Direito - Faculdade de Direito de Franca",
+      "Pós-graduação em Processo Civil",
+      "Extensão em Prática Avançada de Processo do Trabalho",
+    ],
+    expertise: ["Direito Cível", "Direito Trabalhista"],
+    languages: ["Português", "Espanhol"],
+    email: "patricia.ribeiro@testeetesteadvocacia.com.br",
+  },
 ];
 
 export const faqItems = [
